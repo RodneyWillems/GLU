@@ -1,0 +1,206 @@
+body {
+  background-color: grey;
+}
+
+#container {
+  background-color: lightblue;
+  width: 936px;
+  height: 335px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.insideContainer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border: 3px solid black;
+  font-family: NS Sans, Segoe UI, Myriad, Verdana, sans-serif;
+}
+
+/* Left */
+#left {
+  background-color:#DBE1E1;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  width: 195px;
+  height: 195px;
+  border-radius: 50%;
+}
+
+/*End left*/
+/* Middle */
+#middle {
+  background-color: #0248ce;
+  width: 568px;
+  display: flex;
+  justify-content: center;
+}
+
+#departureInfo {
+  background-color: white;
+  width: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 0px 0px 0px 10px;
+}
+
+#trainInfo {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  color: #0415a3;
+  font-weight: 650;
+}
+
+#trainTime {
+  margin-left: 10px;
+  width: 50%;
+}
+
+#one {
+  float: left;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+#minute {
+  float: left;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#currentTime {
+    font-size: 25px;
+}
+
+#trainType {
+  width: 50%;
+  text-align: right;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+#image {
+  width: 70px;
+  height: 30px;
+}
+
+#destination {
+  font-size: 37px;
+  font-weight: 600;
+  color: #0415a3;
+  padding-left: 10px;
+}
+#stops {
+  font-size: 26px;
+  color: #0415a3;
+  margin-top: 5px;
+}
+
+#trainLength {
+  color: #0415a3;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+#length {
+  width: 33%;
+  border: 3px solid #0415a3;
+  border-radius: 50px 50px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.length {
+  margin-left: 11px;
+}
+
+#arrow {
+  background-color: #0415a3;
+  border-top: 50px;
+  border-top-right-radius: 50px;
+  padding-right: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+#nextTrain {
+  background-color: #0415a3;
+  font-size: 10px;
+  color: #f3f3fb;
+  height: 15px;
+  padding-left: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#trainBlocks {
+  display: flex;
+  justify-content: center;
+}
+
+#blocks {
+  display: flex;
+  width: 34%;
+}
+
+.blocks {
+  border: 1px solid black;
+  width: 16%;
+  height: 3px;
+}
+
+#startBlock {
+  border-radius: 0px 0px 0px 10px;
+}
+
+#endBlock {
+  border-radius: 0px 0px 10px 0px;
+}
+
+/* End middel */
+/* Right side */
+#right {
+  background-color: #0248ce;
+  width: 128px;
+}
+
+#track {
+  background-color: #f3f3fb;
+  color: #0254e8;
+  width: 96px;
+  height: 96px;
+  margin-left: 12%;
+  font-weight: 700;
+}
+
+#blue {
+  height: 20px;
+  width: 20px;
+  background-color: #0248ce;
+  float: left;
+  margin-right: 3px;
+}
+#platform {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+#eightteen {
+  font-size: 48px;
+  float: left;
+  text-align: center;
+}
+#b {
+  font-size: 20px;
+  margin-top: 10px;
+}

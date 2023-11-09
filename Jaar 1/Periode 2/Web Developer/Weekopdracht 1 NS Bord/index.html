@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NS Bord</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <!-- Container -->
+    <div id="container">
+      <!-- Left screen -->
+      <div id="left" class="insideContainer">
+        <div class="clock">
+          <img
+            class="clock"
+            src="https://cdn.discordapp.com/attachments/1147057065592893471/1172249630927503400/image.png?ex=655fa18b&is=654d2c8b&hm=7cce38f4428923b10e6ab655ddfc84fc02176f17075f45ce558f70a6282bdef0&"
+            alt="clock"
+          />
+        </div>
+      </div>
+
+      <!-- Middle screen -->
+      <div id="middle" class="insideContainer">
+        <div id="departureInfo">
+          <div id="trainInfo">
+            <div id="trainTime">
+              <div id="one"></div>
+              <div id="minute"></div>
+              <div id="currentTime">08:42</div>
+            </div>
+
+            <div id="trainType">
+              Intercity
+              <img
+                src="https://cdn.discordapp.com/attachments/1147057065592893471/1172246406665351188/GetImage.png?ex=655f9e8a&is=654d298a&hm=37a0d6e408e171e694ed249a9908d84e4430e7ed119a7d3014dad42d8822f6bc&"
+                alt="NS"
+                id="image"
+              />
+            </div>
+          </div>
+
+          <div id="destination">
+            Heerlen
+            <div id="stops">
+              via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard
+            </div>
+          </div>
+
+          <div id="trainLength">
+            <div id="length">
+              <div class="length">P</div>
+              <div class="length">O</div>
+              <div class="length">N</div>
+              <div class="length">M</div>
+              <div class="length">L</div>
+              <div class="length">K</div>
+              <div class="length" id="arrow">→</div>
+            </div>
+          </div>
+          <div id="trainBlocks">
+            <div id="blocks">
+              <div class="blocks" id="startBlock"></div>
+              <div class="blocks"></div>
+              <div class="blocks"></div>
+              <div class="blocks"></div>
+              <div class="blocks"></div>
+              <div class="blocks" id="endBlock"></div>
+            </div>
+          </div>
+
+          <div id="nextTrain">Hierna/next: 08:54 IC Venlo</div>
+        </div>
+      </div>
+
+      <!-- Right screen -->
+      <div id="right" class="insideContainer">
+        <div id="track">
+          <div id="blue"></div>
+
+          <div id="platform">spoor</div>
+
+          <div id="eightteen">18</div>
+
+          <div id="b">b</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
