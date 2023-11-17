@@ -23,19 +23,51 @@
     <div id="container">
       <!--Container met de video erin-->
       <div id="videoContainer">
-        <?php if ($video == 1) { ?><iframe src="https://www.youtube.com/embed/giS0BrfXUmM?si=ClOr8TwLTB6owk8y" allowfullscreen></iframe><?php } ?>
-        <?php if ($video == 2) { ?><iframe src="https://www.youtube.com/embed/_czzkqPjvS4?si=tI5VCDOMvLy_HfnD" allowfullscreen></iframe><?php } ?>
-        <?php if ($video == 3) { ?><iframe src="https://www.youtube.com/embed/fAQmCNWJHb8?si=POfDTpe3WyEdgCvj" allowfullscreen></iframe><?php } ?>
-        <?php if ($video == 4) { ?><iframe src="https://www.youtube.com/embed/3Fh6JnAxq6U?si=vEXOFG3--xmr1HPT" allowfullscreen></iframe><?php } ?>
-        <?php if ($video == 5) { ?><iframe src="https://www.youtube.com/embed/iIGlvAlFzf8?si=NcrstNopBQkt9a5D" allowfullscreen></iframe><?php } ?>
+        <?php 
+        switch ($video) { 
+          case 1: 
+            echo '<iframe src="https://www.youtube.com/embed/giS0BrfXUmM?si=ClOr8TwLTB6owk8y" allowfullscreen></iframe>';
+            break;
+          case 2:
+            echo '<iframe src="https://www.youtube.com/embed/_czzkqPjvS4?si=tI5VCDOMvLy_HfnD" allowfullscreen></iframe>';
+            break;
+          case 3:
+            echo '<iframe src="https://www.youtube.com/embed/fAQmCNWJHb8?si=POfDTpe3WyEdgCvj" allowfullscreen></iframe>';
+            break;
+          case 4:
+            echo '<iframe src="https://www.youtube.com/embed/3Fh6JnAxq6U?si=vEXOFG3--xmr1HPT" allowfullscreen></iframe>';
+            break;
+          case 5:
+            echo '<iframe src="https://www.youtube.com/embed/iIGlvAlFzf8?si=NcrstNopBQkt9a5D" allowfullscreen></iframe>';
+            break;
+          default:
+            break;
+          }
+          ?>
       </div>
       <!--Container met de form erin-->
         <div id="inputContainer">
-          <?php if ($video == 1) { ?><form action="checkValidity.php?video=1" method="post"> <?php } ?>
-          <?php if ($video == 2) { ?><form action="checkValidity.php?video=2" method="post"> <?php } ?>
-          <?php if ($video == 3) { ?><form action="checkValidity.php?video=3" method="post"> <?php } ?>
-          <?php if ($video == 4) { ?><form action="checkValidity.php?video=4" method="post"> <?php } ?>
-          <?php if ($video == 5) { ?><form action="checkValidity.php?video=5" method="post"> <?php } ?>
+          <?php 
+          switch ($video) { 
+            case 1: 
+              echo '<form action="checkValidity.php?video=1" method="post">';
+              break;
+            case 2:
+              echo '<form action="checkValidity.php?video=2" method="post">';
+              break;
+            case 3:
+              echo '<form action="checkValidity.php?video=3" method="post">';
+              break;
+            case 4:
+              echo '<form action="checkValidity.php?video=4" method="post">';
+              break;
+            case 5:
+              echo '<form action="checkValidity.php?video=5" method="post">';
+              break;
+            default:
+              break;
+            }
+            ?>
             <input type="text" name="username" id="usernameInput" class="input" placeholder="Username..." required> <br>
             <input type="text" name="email" id="emailInput" class="input" placeholder="Email..." required> <br>
             <!--Textarea in plaats van input zodat de text links bovenin staat in plaats van het midden-->
