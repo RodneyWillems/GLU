@@ -47,7 +47,7 @@ INSERT INTO `cracktube` (`id`, `videoid`, `username`, `email`, `comment`) VALUES
 (5, 1, 'Laclac', 'Loic@gaming.net', 'I really liked number 5!'),
 (6, 2, 'Zakaria', 'Zak@gaming.net', 'I missed \"Nope\" why????'),
 (7, 3, 'Mark', 'MarkVerrips@gmail.com', 'Ik hou van mayo de noche!');
-(8, 5, 'GohanBlade', 'Gohanblade@gmail.com', 'I loved the FNAF movie !!!');)
+(8, 5, 'GohanBlade', 'Gohanblade@gmail.com', 'I loved the FNAF movie !!!');
 
 --
 -- Indexes for dumped tables
