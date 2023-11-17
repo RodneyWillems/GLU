@@ -53,6 +53,9 @@ switch ($video) {
     case "4":
         header("Location: index.php?video=4");
         break;
+    case "5":
+        header("Location: index.php?video=5");
+        break;
     default:
         break;
 }
